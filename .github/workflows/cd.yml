@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    name: Tests
+    name: Build Node.js
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,6 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-      
+
     - name: Build
       run: npm run build
